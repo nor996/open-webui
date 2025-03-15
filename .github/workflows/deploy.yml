@@ -37,8 +37,8 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "nor996-open-webui-45"
-          entrypoint: "mod.ts"
-          root: "build"
-          
+          project: "nor996-open-webui-85"
+          entrypoint: "jsr:@deno/nextjs-start"
+          root: "."
+          include: .next, public
           
